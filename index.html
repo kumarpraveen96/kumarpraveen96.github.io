@@ -1,0 +1,132 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>PupilFirst Capstone Project - Martial Arts Game </h1>
+    <h2>By Praveen Kumar
+        <a  href="https://www.linkedin.com/in/praveen1996/" target = "_blank" class="fa fa-linkedin"></a>
+    </h2>
+    <canvas id="my-canvas" width="500" height="500"></canvas>
+    <div>
+        <button class="kick" id="kick">Kick (Left Arrow Key)</button>
+        <div> <button class="punch" id="punch">Punch (Right Arrow Key)</button></div>
+        <div><button class="forward" id="forward">Forward (Top Arrow Key)</button></div>
+        <div> <button class="backward" id="backward">Backward (Bottom Arrow Key)</button></div>
+        <div><button class="block" id="block">Block (Spacebar)</button></div>
+    </div>
+    <div class="backgroundImage"></div>
+</body>
+<style>
+    .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    h1 {
+        font-family: monospace;
+        font-size:24px;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: monospace;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    body {
+        background-image:
+        url('images/background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100%;
+    }
+
+    .kick {
+        border-radius: 8px;
+        font-size: 14px;
+        transition-duration: 0.4s;
+        font-family: monospace;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .kick:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .punch {
+        border-radius: 8px;
+        font-size: 14px;
+        transition-duration: 0.4s;
+        font-family: monospace;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .punch:hover {
+        background-color: #f5870a;
+        color: white;
+    }
+
+    .forward {
+        border-radius: 8px;
+        font-size: 14px;
+        transition-duration: 0.4s;
+        font-family: monospace;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .forward:hover {
+        background-color: #0a68f5;
+        color: white;
+    }
+
+    .backward {
+        border-radius: 8px;
+        font-size: 14px;
+        transition-duration: 0.4s;
+        font-family: monospace;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .backward:hover {
+        background-color: #2d0af5;
+        color: white;
+    }
+
+    .block {
+        border-radius: 8px;
+        font-size: 14px;
+        transition-duration: 0.4s;
+        font-family: monospace;
+        position: relative;
+        margin-top: 10px;
+
+    }
+
+    .block:hover {
+        background-color: #5e5c06;
+        color: white;
+    }
+</style>
+<script type="text/javascript" src="/main.js"></script>
